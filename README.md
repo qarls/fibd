@@ -13,7 +13,7 @@ fib <N> <K>
 
 Where...
 - N: number of months or length of Fibonacci sequence.
-- K: number of bnuuy pairs in litter; or a coefficient applied to the addend In Finobacci Seqeuence.
+- K: number of bnuuy pairs in litter; or a coefficient applied to the addend in Finobacci Seqeuence.
 
 ## Examples
 
