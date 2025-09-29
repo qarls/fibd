@@ -38,5 +38,5 @@ $ cargo run -- 5 3
 
 ## [2025-09-28]
 I was considering using a vector of strings and indexing--though that would push Rust to use the heap;
-it would also mean cloning doubling the capacity at powers of two.
+it would also mean cloning the String on the heap when doubling the capacity at powers of two.
 - Bnuuy
