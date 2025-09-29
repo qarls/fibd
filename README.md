@@ -6,18 +6,26 @@ Count of bnuuies total following the Finobacci sequence.
 Uses clap.rs.
 
 # Usage
+
 ```
-fib <N> <K
+fib <N> <K>
 ```
-## Arguments:
+
+## Arguments
+
+```
   <N>  Months
   <K>  Number of bnuuy pairs per litter per month
+```
 
-## Options:
+## Options
+
+``` 
   -h, --help     Print help
   -V, --version  Print version
+```
 
-## Examples:
+## Examples
 
 ### Output to file (sh)
 ```
@@ -28,10 +36,10 @@ $ cargo run -- $(cat test.txt) > test_output.txt
 
 ### Output to Terminal
 ```
-$ cargo run -- 3 5
+$ cargo run -- 5 3
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
-     Running `target/debug/fib 32 5`
-40238153982301
+     Running `target/debug/fib 5 3`
+19
 ```
 
 # Updates and Comments

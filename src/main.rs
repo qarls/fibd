@@ -6,18 +6,20 @@ const ABOUT_MESSAGE: &str = "Count of bnuuies total following the Finobacci sequ
 struct Cli {
     /// Months
     n: usize,
+
     /// Number of bnuuy pairs per litter per month
     k: usize,
 }
 
-fn bnuuy_pair_count(n: usize, k: usize) -> usize {
+pub fn bnuuy_pair_count(n: usize, k: usize) -> usize {
+    let mut count = 1;
+
     //no new bnuuies until after 2nd month
     if n <= 2 {
-        return 1;
+        return count;
     }
 
-    //these represent current, F_{n-1} and F_{n-2}
-    let mut count = 1;
+    //these represent F_{n-1} and F_{n-2}
     let mut f_one = 1;
     let mut f_two: usize;
 
