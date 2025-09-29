@@ -1,4 +1,4 @@
-# fib (fib)
+# fib
 
 Count of bnuuies total following the Finobacci sequence.
 - Solution for Rosalind's [Rabbits and Recurrence Relations](https://rosalind.info/problems/fib/).
@@ -11,23 +11,14 @@ Uses clap.rs.
 fib <N> <K>
 ```
 
-## Arguments
-
-```
-  <N>  Months
-  <K>  Number of bnuuy pairs per litter per month
-```
-
-## Options
-
-``` 
-  -h, --help     Print help
-  -V, --version  Print version
-```
+Where...
+- N: number of months or length of Fibonacci sequence.
+- K: number of bnuuy pairs in litter; or a coefficient applied to the addend In Finobacci Seqeuence.
 
 ## Examples
 
 ### Output to file (sh)
+Works in Linux terminals.
 ```
 $ cargo run -- $(cat test.txt) > test_output.txt
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
@@ -35,6 +26,7 @@ $ cargo run -- $(cat test.txt) > test_output.txt
 ```
 
 ### Output to Terminal
+To directly input and receive values, feel free to simply input them as separate args.
 ```
 $ cargo run -- 5 3
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.01s
